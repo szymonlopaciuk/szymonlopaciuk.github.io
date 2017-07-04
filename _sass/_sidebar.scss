@@ -70,6 +70,12 @@
         left: 2.2rem;
     }
 }
+@media (max-width: 58em) {
+  .sidebar-sticky {
+    margin-top: -0.8rem;
+  }
+}
+
 // Collapsable nav
 
 .tagline {
