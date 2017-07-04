@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {{ content }}
+
+  {% if site.posts.size == 0 %}
+    <i>The doesn't seem to be any posts yet...</i>
+  {% endif %}
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

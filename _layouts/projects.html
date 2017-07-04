@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {{ content }}
+
+  <ul class="post-list">
+    {% for project in page.projects %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ project.url }}">{{ project.name }}</a>
+        </h2>
+        <p>{{ project.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

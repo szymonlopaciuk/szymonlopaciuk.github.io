@@ -1,1 +1,0 @@
-# szymonlopaciuk.github.io

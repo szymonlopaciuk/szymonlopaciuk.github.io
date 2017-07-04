@@ -1,0 +1,25 @@
+<!-- Adapted from the work by Renzo Lucioni [https://renzo.lucioni.xyz] -->
+
+<header class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+    <h1>
+      <a href="/"></a>
+    </h1>
+    <p class="tagline lead">Szymon Łopaciuk's personal website and portfolio.</p>
+  </div>
+
+  <div class="collapsable">
+    <nav class="sidebar-nav">
+      {% for link in site.sidebar_links %}
+        {% if link.url == page.url %}
+          <a class="sidebar-nav-item active" href="{{ link.url }}">{{ link.title }}</a>
+        {% else %}
+          <a class="sidebar-nav-item" href="{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+      {% endfor %}
+  </nav>
+  </div>
+    <p class="copyright">© 2017 Szymon Łopaciuk</p>
+  </div>
+</header>

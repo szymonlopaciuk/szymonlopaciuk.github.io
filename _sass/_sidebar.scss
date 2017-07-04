@@ -1,0 +1,131 @@
+// Adapted from the work by Renzo Lucioni [https://renzo.lucioni.xyz]
+
+.sidebar {
+    text-align: center;
+    padding: 1rem;
+    color: rgba($white, 0.54);
+    background-color: $accent-secondary;
+}
+
+.logo {
+    height: 5rem;
+    display: block;
+    margin: 0 auto 1rem;
+}
+// Sends sidebar to the top when page width < 58em.
+@media (min-width: 58em) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0; // Sidebar width, reducing this causes existing text to wrap.
+        width: $sidebar-width;
+        text-align: left;
+    }
+
+    .logo {
+        height: 15rem;
+        margin-left: 0;
+    }
+}
+
+.sidebar-about h1 a {
+    margin-top: 0;
+}
+// Links
+
+.sidebar a {
+    color: rgba($white, 0.87); //@include transition(color, 250ms, ease);
+}
+
+.sidebar a:focus,
+.sidebar a:hover {
+    color: rgba($white, 1.0);
+}
+// Navigation
+
+.sidebar-nav {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+    font-size: 1.11rem;
+}
+
+.sidebar-nav-item.active {
+    font-weight: 500;
+    pointer-events: none;
+    cursor: default;
+}
+// Glues the bottom of the sidebar to the bottom of the viewport.
+// To see it in action, try making the window shorter; watch the
+// sidebar shrink as the rest of the page stays in place.
+@media (min-width: 58em) {
+    .sidebar-sticky {
+        position: absolute;
+        right: 2.2rem;
+        bottom: 2.2rem;
+        left: 2.2rem;
+    }
+}
+// Collapsable nav
+
+.tagline {
+    display: none;
+}
+@media (min-width: 58rem) {
+    .tagline {
+        display: block;
+    }
+}
+
+.lead {
+    margin-bottom: 1rem;
+    font-size: 1.33rem;
+    font-weight: 300;
+}
+
+#menu-icon {
+    display: none;
+}
+
+.collapsable {
+    display: none; // Padding below menu label.
+    padding-top: 0.5rem;
+}
+
+input[type=checkbox]:checked ~ .collapsable {
+    display: block;
+}
+
+input[type=checkbox] ~ .menu-label:after {
+    content: "Menu";
+}
+
+input[type=checkbox]:checked ~ .menu-label:after {
+    content: "Collapse";
+}
+@media (min-width: 58rem) {
+    .menu-label {
+        display: none;
+    }
+
+    .collapsable {
+        display: block;
+        padding-top: inherit;
+    }
+}
+
+.copyright {
+    display: none;
+    margin-bottom: 0;
+}
+@media (min-width: 58rem) {
+    .copyright {
+        font-size: 0.83em;
+        font-weight: 100;
+        display: block;
+    }
+}
