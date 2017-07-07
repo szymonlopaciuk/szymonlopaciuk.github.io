@@ -1,137 +1,157 @@
 // Adapted from the work by Renzo Lucioni [https://renzo.lucioni.xyz]
 
 .sidebar {
-    text-align: center;
-    padding: 1rem;
-    color: rgba($white, 0.54);
-    background-color: $accent-secondary;
+  text-align: center;
+  padding: 1rem;
+  color: rgba($white, 0.54);
+  background-color: $accent-secondary;
 }
 
 .logo {
-    height: 5rem;
-    display: block;
-    margin: 0 auto 1rem;
+  height: 5rem;
+  display: block;
+  margin: 0 auto 1rem;
 }
 // Sends sidebar to the top when page width < 58em.
 @media (min-width: 58em) {
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0; // Sidebar width, reducing this causes existing text to wrap.
-        width: $sidebar-width;
-        text-align: left;
-    }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0; // Sidebar width, reducing this causes existing text to wrap.
+    width: $sidebar-width;
+    text-align: left;
+  }
 
-    .logo {
-        height: 15rem;
-        margin-left: 0;
-    }
+  .logo {
+    height: 15rem;
+    margin-left: 0;
+  }
 }
 
 .sidebar-about h1 a {
-    margin-top: 0;
+  margin-top: 0;
 }
 // Links
 
 .sidebar a {
-    color: rgba($white, 0.87); //@include transition(color, 250ms, ease);
+  color: rgba($white, 0.87); //@include transition(color, 250ms, ease);
 }
 
 .sidebar a:focus,
 .sidebar a:hover {
-    color: rgba($white, 1.0);
+  color: rgba($white, 1.0);
 }
 // Navigation
 
 .sidebar-nav {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .sidebar-nav-item {
-    display: block;
-    line-height: 1.75;
-    font-size: 1.11rem;
+  display: block;
+  line-height: 1.75;
+  font-size: 1.11rem;
 }
 
 .sidebar-nav-item.active {
-    font-weight: 500;
-    pointer-events: none;
-    cursor: default;
+  font-weight: 500;
+  pointer-events: none;
+  cursor: default;
 }
 // Glues the bottom of the sidebar to the bottom of the viewport.
 // To see it in action, try making the window shorter; watch the
 // sidebar shrink as the rest of the page stays in place.
 @media (min-width: 58em) {
-    .sidebar-sticky {
-        position: absolute;
-        right: 2.2rem;
-        bottom: 2.2rem;
-        left: 2.2rem;
-    }
+  .sidebar-sticky {
+    position: absolute;
+    right: 2.2rem;
+    bottom: 2.2rem;
+    left: 2.2rem;
+  }
 }
 @media (max-width: 58em) {
   .sidebar-sticky {
     margin-top: -0.8rem;
   }
 }
-
 // Collapsable nav
 
 .tagline {
-    display: none;
+  display: none;
 }
 @media (min-width: 58rem) {
-    .tagline {
-        display: block;
-    }
+  .tagline {
+    display: block;
+  }
 }
 
 .lead {
-    margin-bottom: 1rem;
-    font-size: 1.33rem;
-    font-weight: 300;
+  margin-bottom: 1rem;
+  font-size: 1.33rem;
+  font-weight: 300;
 }
 
 #menu-icon {
-    display: none;
+  display: none;
 }
 
 .collapsable {
-    display: none; // Padding below menu label.
-    padding-top: 0.5rem;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition: all 0.25s ease-out;
 }
 
 input[type=checkbox]:checked ~ .collapsable {
-    display: block;
+  max-height: 500px;
+  margin-top: 0.5rem;
+  width: 100%;
+  transition: all 0.20s ease-in;
 }
 
-input[type=checkbox] ~ .menu-label:after {
+.times {
+  font-size: 1.5em;
+}
+
+input[type=checkbox] ~ .menu-label {
+  &:after {
     content: "Menu";
+  }
+
+  & > .times {
+    display: none;
+  }
 }
 
-input[type=checkbox]:checked ~ .menu-label:after {
-    content: "Collapse";
+input[type=checkbox]:checked ~ .menu-label {
+  &:after {
+    content: "";
+  }
+
+  & > .times {
+    display: inline-block;
+  }
 }
 @media (min-width: 58rem) {
-    .menu-label {
-        display: none;
-    }
+  .menu-label {
+    display: none;
+  }
 
-    .collapsable {
-        display: block;
-        padding-top: inherit;
-    }
+  .collapsable {
+    display: block;
+    padding-top: inherit;
+  }
 }
 
 .copyright {
-    display: none;
-    margin-bottom: 0;
+  display: none;
+  margin-bottom: 0;
 }
 @media (min-width: 58rem) {
-    .copyright {
-        font-size: 0.83em;
-        font-weight: 100;
-        display: block;
-    }
+  .copyright {
+    font-size: 0.83em;
+    font-weight: 100;
+    display: block;
+  }
 }
