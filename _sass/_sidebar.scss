@@ -80,7 +80,7 @@
 .tagline {
   display: none;
 }
-@media (min-width: 58rem) {
+@media (min-width: 58em) {
   .tagline {
     display: block;
   }
@@ -96,11 +96,13 @@
   display: none;
 }
 
-.collapsable {
-  max-height: 0;
-  overflow: hidden;
-  margin-top: 0;
-  transition: all 0.25s ease-out;
+@media (max-width: 58em) {
+  .collapsable {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: all 0.25s ease-out;
+  }
 }
 
 input[type=checkbox]:checked ~ .collapsable {
@@ -133,7 +135,7 @@ input[type=checkbox]:checked ~ .menu-label {
     display: inline-block;
   }
 }
-@media (min-width: 58rem) {
+@media (min-width: 58em) {
   .menu-label {
     display: none;
   }
@@ -148,7 +150,7 @@ input[type=checkbox]:checked ~ .menu-label {
   display: none;
   margin-bottom: 0;
 }
-@media (min-width: 58rem) {
+@media (min-width: 58em) {
   .copyright {
     font-size: 0.83em;
     font-weight: 100;
