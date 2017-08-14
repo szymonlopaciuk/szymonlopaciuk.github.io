@@ -148,9 +148,8 @@ pre,
 code {
   @include relative-font-size(0.85);
   font-family: $monospace;
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  border: none;
+  border-radius: 2px;
 }
 
 code {
