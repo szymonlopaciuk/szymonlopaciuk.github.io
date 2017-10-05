@@ -4,7 +4,7 @@ title: About me
 permalink: /index.html
 ---
 
-I am a technology enthusiast and a computer science student at Loughborough University, UK. Currently I am working as a technical student at [CERN](https://phonebook.cern.ch/phonebook/#personDetails/?id=822724) in Switzerland on [INSPIRE](https://inspirehep.net).
+I am a technology enthusiast and a computer science student at Loughborough University, UK. Currently I am working on [INSPIRE](https://inspirehep.net) as a technical student at [CERN](https://phonebook.cern.ch/phonebook/#personDetails/?id=822724) in Switzerland.
 
 My interests include software development and natural language processing. Have a look at my [portfolio](/portfolio.html) or [GitHub](https://github.com/szymonlopaciuk) to see some of my past projects, and if you would like to know more about me, [this is my LinkedIn profile](https://www.linkedin.com/in/szymonlopaciuk/).
 
