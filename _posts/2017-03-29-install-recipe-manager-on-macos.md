@@ -2,7 +2,6 @@
 layout: post
 title: "Running Recipe Manager on macOS"
 date: 2017-03-29 21:59
-categories: [ sidebar, gallery ]
 ---
 
 # 1. Installing dependencies
