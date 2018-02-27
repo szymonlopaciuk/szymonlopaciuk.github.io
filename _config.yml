@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Szymon Łopaciuk
-email: szymon@lopaciuk.me
+email: szymon@lopaciuk.eu
 description: >
   I am a technology enthusiast and a computer science student at Loughorough University.
   This is my personal website and portfolio.
