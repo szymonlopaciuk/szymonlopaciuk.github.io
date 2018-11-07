@@ -7,6 +7,9 @@ projects:
   - name: Recipe Manager
     url: http://www.lopaciuk.me/RecipeManager/
     description: A recipe management app made with GTK+3, features smart unit conversions.
+  - name: inspire-mitmproxy
+    url: https://github.com/inspirehep/inspire-mitmproxy
+    description: A testing tool for running E2E tests developed while working with INSPIRE at CERN
   - name: cmyk-dtp.pl
     url: http://cmyk-dtp.pl/
     description: Webpage and branding for a desktop publishing company.
