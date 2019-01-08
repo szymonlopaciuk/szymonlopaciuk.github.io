@@ -5,7 +5,7 @@ permalink: /portfolio.html
 
 projects:
   - name: Recipe Manager
-    url: http://www.lopaciuk.me/RecipeManager/
+    url: http://www.lopaciuk.eu/RecipeManager/
     description: A recipe management app made with GTK+3, features smart unit conversions.
   - name: inspire-mitmproxy
     url: https://github.com/inspirehep/inspire-mitmproxy
