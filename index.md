@@ -4,7 +4,7 @@ title: About me
 permalink: /index.html
 ---
 
-Hi! I'm Szymon. I am a technology enthusiast and a computer science student at Loughborough University, UK.
+Hi! I'm Szymon. I am a computer science student at Loughborough University, UK, and a former Technical Student at the European Organization for Nuclear Research (CERN).
 
 My interests include software development, natural language processing and theoretical computer science. Have a look at my [portfolio](/portfolio.html) or [GitHub](https://github.com/szymonlopaciuk) to see some of my past projects, and if you would like to know more about me, [this is my LinkedIn profile](https://www.linkedin.com/in/szymonlopaciuk/).
 
