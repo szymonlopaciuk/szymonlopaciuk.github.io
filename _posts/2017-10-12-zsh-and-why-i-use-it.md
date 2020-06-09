@@ -4,8 +4,6 @@ title: "ZSH Tricks and Why I Use It"
 date: 2017-10-13 23:26
 ---
 
-_Note: I ramble. You can safely skip the first section if you only want the proper knowledge._
-
 Why use zsh in the first place, you might ask? That is a totally reasonable question. After all, bash gets preinstalled on (almost?) all Linux distributions and beyond, everyone knows it, it's tested and of established quality. Why change?
 
 There are of course multitudes of technical and usability reasons to use it. But let's get the first obvious one out of the way. It's cool. It's what the cool kids use, and the reason it's cool, is because it's not bash. Bash is what boring kids go for. In a way it's like the old holy war between Emacs and Vim users. The whole war exists not because one is objectively better than the other. Let me elaborate:
