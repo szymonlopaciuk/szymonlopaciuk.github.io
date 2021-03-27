@@ -59,6 +59,8 @@ kbd {
   line-height: 1;
   padding: 2px 4px;
   white-space: nowrap;
+  min-width: 1.5em;
+  text-align: center;
  }
 
 
@@ -83,6 +85,22 @@ figcaption {
   font-size: $small-font-size;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-style: normal;
+  font-size: $small-font-size;
+}
+
 
 
 /**
@@ -93,10 +111,8 @@ ul, ol {
 }
 
 li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0.5em;
+  line-height: $base-line-height;
 }
 
 
@@ -161,8 +177,11 @@ pre,
 code {
   @include relative-font-size(0.85);
   font-family: $monospace;
-  border: none;
-  border-radius: 2px;
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
 }
 
 code {
@@ -235,4 +254,33 @@ pre {
   li + li {
     padding-top: 5px;
   }
+}
+
+
+
+/**
+ * Tables
+ */
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+}
+
+table td, table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+  line-height: $base-line-height;
+}
+
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
 }

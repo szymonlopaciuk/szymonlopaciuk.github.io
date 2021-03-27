@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="291.167px" height="165.333px" viewBox="0 0 291.167 165.333" enable-background="new 0 0 291.167 165.333"
+	 xml:space="preserve">
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="15.236" y1="112.334" x2="15.236" y2="128.334"/>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="16.322" y1="120.333" x2="67.406" y2="120.336"/>
+		<g>
+			<polygon points="19.634,124.422 20.317,123.69 16.703,120.333 20.317,116.977 19.635,116.243 15.237,120.333 			"/>
+		</g>
+		<g>
+			<polygon points="64.091,124.426 63.409,123.694 67.021,120.338 63.409,116.981 64.092,116.249 68.488,120.338 			"/>
+		</g>
+	</g>
+</g>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="68.488" y1="112.336" x2="68.488" y2="128.336"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="102.983" y1="112.34" x2="102.983" y2="128.34"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="15.236" y1="10.336" x2="15.236" y2="95.668"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="102.597" y1="10.347" x2="102.597" y2="95.678"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="15.236" y1="95.668" x2="68.495" y2="95.674"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="68.493" y1="95.674" x2="68.493" y2="10.342"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="68.488" y1="10.342" x2="102.597" y2="10.342"/>
+<text transform="matrix(1 0 0 1 26.8596 137.6704)" font-family="'Helvetica'" font-size="12">65 μs</text>
+<text transform="matrix(1 0 0 1 70.5364 137.6782)" font-family="'Helvetica'" font-size="12">35 μs</text>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="69.58" y1="120.338" x2="101.902" y2="120.34"/>
+		<g>
+			<polygon points="72.893,124.428 73.575,123.696 69.962,120.338 73.575,116.983 72.894,116.249 68.495,120.338 			"/>
+		</g>
+		<g>
+			<polygon points="98.587,124.43 97.905,123.698 101.516,120.342 97.905,116.985 98.588,116.252 102.983,120.342 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 37.9915 153.6665)" font-family="'Helvetica'" font-size="12">bit ‘zero’</text>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="278.984" y1="129" x2="278.984" y2="113"/>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="226.813" y1="121.001" x2="277.898" y2="120.998"/>
+		<g>
+			<polygon points="278.983,120.998 274.584,116.908 273.903,117.642 277.516,120.998 273.903,124.355 274.585,125.087 			"/>
+		</g>
+		<g>
+			<polygon points="225.732,121.003 230.127,116.914 230.81,117.646 227.198,121.003 230.81,124.359 230.128,125.091 			"/>
+		</g>
+	</g>
+</g>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="225.732" y1="129.001" x2="225.732" y2="113.001"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="191.236" y1="129.005" x2="191.236" y2="113.005"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="278.984" y1="96.343" x2="278.984" y2="11.011"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="191.622" y1="96.333" x2="191.622" y2="11.001"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="278.984" y1="11.011" x2="225.724" y2="11.005"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="225.726" y1="11.005" x2="225.726" y2="96.338"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="225.732" y1="96.338" x2="191.622" y2="96.337"/>
+<text transform="matrix(1 0 0 1 237.3479 138.3345)" font-family="'Helvetica'" font-size="12">65 μs</text>
+<text transform="matrix(1 0 0 1 193.6711 138.3442)" font-family="'Helvetica'" font-size="12">35 μs</text>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="192.318" y1="121.005" x2="224.639" y2="121.003"/>
+		<g>
+			<polygon points="225.724,121.003 221.325,116.914 220.644,117.648 224.257,121.003 220.644,124.361 221.326,125.093 			"/>
+		</g>
+		<g>
+			<polygon points="191.236,121.007 195.632,116.917 196.314,117.65 192.702,121.007 196.314,124.363 195.632,125.095 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 215.6526 154.3315)" font-family="'Helvetica'" font-size="12">bit ‘one’</text>
+</svg>
