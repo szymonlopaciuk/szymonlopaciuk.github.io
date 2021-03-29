@@ -20,7 +20,7 @@ For the code I refer to my GitHub project, [stm32-adb2usb](https://github.com/sz
 
 # ADB: An Introduction
 
-Apple Desktop Bus is a serial connection that allows chaining multiple devices of different devices which can utilise a single bus, not unlike I²C. It is uniquely suited towards human input devices such as mice and keyboards, as well as tablets and trackballs, where already the design considerations behind it are such that user input is responsive and snappy. Capable of transmission speed of 10 kb/s[^2], although is reality slower because of a shared bus and polling frequency of the host.
+Apple Desktop Bus is a serial connection that allows chaining multiple devices, utilising a single bus, not unlike I²C. It is uniquely suited towards human input devices such as mice and keyboards, as well as tablets and trackballs, where already the design considerations behind it are such that user input is responsive and snappy. Capable of transmission speed of 10 kb/s[^2], although in reality slower because of a shared bus and polling frequency of the host.
 
 There is one host which drives the bus and issues commands to the devices. Besides one special case, the short period when a device can assert a request signal, the devices are not allowed to use the bus unprompted. The bus when unused is pulled up to 5V high, and each of the devices has the ability to pull it low.
 
@@ -37,11 +37,11 @@ The bus initialised by performing a reset signal: the host pulls the bus low for
 ![ADB Reset Signal](/assets/adb-reset.svg)
 *The reset signal.*
 
-After the reset signal, it is customary for the host to wait up to one second, as some devices, notably the AEKII, are know to take a bit to reset.
+After the reset signal, it is customary for the host to wait up to one second, as some devices, notably the AEKII, are known to take a bit to reset.
 
 Following that, the host queries the devices and reassigns their addresses to disambiguate them. This is due to a built-in collision detection. Let us assume there are two keyboards on the bus, and initially both have the address of `2` (the default address of a keyboard):
 
-1. The host issues a `Talk` register `3` command to address `2`, and keyboard A responds first (wins the collision)
+1. The host issues a `Talk` register `3` command to address `2`, and keyboard A responds first (wins the collision).
 2. Keyboard B detects that it lost the collision, and immediately stops transmitting. It will also keep quiet for the next transaction issued to its address.
 3. The host issues a `Listen` register `3` command to address `2` giving keyboard A a new address of, say, `8`.
 4. The host issues a `Talk` register `3` command to address `2` again, and this time keyboard B responds with the contents of its register 3.
@@ -68,7 +68,7 @@ As there are four commands, which usually consist of 4 address bits, 2 command c
 
 Where `AAAA` stands for the device address, `*` can be any bit, and `RR` stands for the register number.
 
-# Polling
+# Transactions
 
 After all collisions are dealt with, the host begins polling devices. It starts with the default device, usually a mouse. This device is the active device, and it will be polled continuously, unless another device asserts a service request.
 
@@ -79,7 +79,7 @@ Each transaction is initiated by the host, which sends a command. The structure 
 3. The command is transmitted, 8 bits structured as follows: 4 bits of the device address, 2-bit command code, and 2-bit register code.
 4. Stop bit of `0` is sent. During the low part of the stop bit signal any device can pull the bus low for a total of 300 μs to assert a service request (`Srq`). This is to indicate that a device is in need of service.
 5. After the stop bit, the bus is kept high for 140--260 μs, the so-called 'Stop-bit-to-start-bit' time, also known as `Tlt`.
-6. The queried device responds (although if no new data is available, it does not have to, depending on the register) by sending a start bit of `1`, 16 bits of the register data, followed by the stop bit of `0`.
+6. The queried device responds (although if no new data is available, it does not have to, depending on the register) by sending a start bit of `1`, 16 bits of the register data, followed by the stop bit of `0`. Alternatively, in case of a `Listen` command, the host sends its data packet in the same way, with start and stop bits.
 
 If a device asserts an `Srq`, the host will poll the register `0` of all the devices on the bus in sequence until it finds the asserting device: that happens when no `Srq` is asserted during the transaction. This device then becomes a new active device, and will be polled continuously until another device asserts an `Srq` again. For more details on the `Srq`, [this post](https://www.bigmessowires.com/2016/03/30/understanding-the-adb-service-request-signal/) is very helpful, and provides examples of actual transactions captured using a logic analyser!
 
@@ -103,7 +103,7 @@ These are device specific registers, and can be used for miscellaneous data.
 
 ## Register 3
 
-This device contains device's settings and metadata. It contains the address, and a so-called handler ID, which can be changed by the host to modify devices behaviour: e.g. in the case of AEKII we change the handler ID to enable the 'Extended Keyboard Protocol' which allows for discerning left and right modifiers. The structure of the register 3 is as follows (Apple's *Guide*, p. 322):
+This register contains device's settings and metadata. It contains the address, and a so-called handler ID, which can be changed by the host to modify devices behaviour: e.g. in the case of AEKII we change the handler ID to enable the 'Extended Keyboard Protocol' which allows for discerning left and right modifiers. The structure of the register 3 is as follows (Apple's *Guide*, p. 322):
 
 | Bit   | Description                                     |
 |:------|:------------------------------------------------|
