@@ -26,7 +26,7 @@ There is one host which drives the bus and issues commands to the devices. Besid
 
 Key features of the protocol:
 
-- Each device has an address which identifies it on the bus: initially this determines the type of the device, but can be changed by the host when there are multiple devices of the same time to avoid collisions.
+- Each device has an address which identifies it on the bus: initially this determines the type of the device, but can be changed by the host when there are multiple devices of the same type to avoid collisions.
 - Each device has up to 4 so-called registers, which are 16 bits, and store data produced by the device, or which can be written to, to change the device's behaviour: device address is stored as part of register `3`.
 - The host can issue 4 commands, to read (`Talk`), write (`Listen`), reset (`SendReset`), or flush (`Flush`) a device.
 
