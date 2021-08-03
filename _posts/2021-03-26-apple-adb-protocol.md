@@ -32,7 +32,7 @@ Key features of the protocol:
 
 # Setup
 
-The bus initialised by performing a reset signal: the host pulls the bus low for the period of 3 milliseconds or more (a summary of all the timings can be found towards the end of this post).
+The bus is initialised by performing a reset signal: the host pulls the bus low for the period of 3 milliseconds or more (a summary of all the timings can be found towards the end of this post).
 
 ![ADB Reset Signal](/assets/adb-reset.svg)
 *The reset signal.*
@@ -46,7 +46,7 @@ Following that, the host queries the devices and reassigns their addresses to di
 3. The host issues a `Listen` register `3` command to address `2` giving keyboard A a new address of, say, `8`.
 4. The host issues a `Talk` register `3` command to address `2` again, and this time keyboard B responds with the contents of its register 3.
 5. The host issues a `Listen` register `3` command to address `2` giving keyboard B a new address of, say, `9`.
-6. The host issues a final `Talk` register `3` command to address `2` but as there are no more keyboard, there is no response. The host then moves on to querying the next address.
+6. The host issues a final `Talk` register `3` command to address `2` but as there are no more keyboards, there is no response. The host then moves on to querying the next address.
 
 Keep in mind that this part is not mandatory, and as such if you are sure that you will only ever handle one device of each type it can be skipped.
 
@@ -66,7 +66,7 @@ As there are four commands, which usually consist of 4 address bits, 2 command c
 | `Listen`     | `AAAA10RR` | Write data to a device register. The transaction is cancelled if there is any other signal on the bus before the data transfer starts. |
 | `Talk`       | `AAAA11RR` | Request data from a device. If no new data is available the device can ignore the request, with the exception of when the command is issued to register 3. Such command must always be responded to. |
 
-Where `AAAA` stands for the device address, `*` can be any bit, and `RR` stands for the register number.
+In the table above, `AAAA` stands for the device address, `*` can be any bit, and `RR` stands for the register number.
 
 # Transactions
 
