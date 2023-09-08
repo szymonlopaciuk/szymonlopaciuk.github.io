@@ -4,7 +4,7 @@ title: About me
 permalink: /index.html
 ---
 
-Hi! I'm Szymon. I am a a Computer Scientist currently working on [Xsuite]([http://](https://xsuite.readthedocs.io/en/latest/) at the European Organization for Nuclear Research (CERN). Previously, I wrote my Theoretical Computer Science PhD thesis [on the Billaud Conjecture](https://repository.lboro.ac.uk/articles/thesis/On_the_Billaud_Conjecture_and_related_problems/21390837) at Loughborough University, UK. During my undergraduate studies I completed a Technical Studentship at CERN working on [Inspire](https://inspirehep.net).
+Hi! I'm Szymon. I am a a Computer Scientist currently working on [Xsuite](https://xsuite.readthedocs.io/en/latest/) at the European Organization for Nuclear Research (CERN). Previously, I wrote my Theoretical Computer Science PhD thesis [on the Billaud Conjecture](https://repository.lboro.ac.uk/articles/thesis/On_the_Billaud_Conjecture_and_related_problems/21390837) at Loughborough University, UK. During my undergraduate studies I completed a Technical Studentship at CERN working on [Inspire](https://inspirehep.net).
 
 My interests include theoretical computer science, software development and natural language processing. Have a look at my [portfolio](/portfolio.html) or [GitHub](https://github.com/szymonlopaciuk) to see some of my past projects, and if you would like to know more about me, [this is my LinkedIn profile](https://www.linkedin.com/in/szymonlopaciuk/).
 
