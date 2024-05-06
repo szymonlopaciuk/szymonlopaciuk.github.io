@@ -4,9 +4,9 @@ title: About me
 permalink: /index.html
 ---
 
-Hi! I'm Szymon. I am a a Computer Scientist currently working on [Xsuite](https://xsuite.readthedocs.io/en/latest/) at the European Organization for Nuclear Research (CERN). Previously, I wrote my Theoretical Computer Science PhD thesis [on the Billaud Conjecture](https://repository.lboro.ac.uk/articles/thesis/On_the_Billaud_Conjecture_and_related_problems/21390837) at Loughborough University, UK. During my undergraduate studies I completed a Technical Studentship at CERN working on [Inspire](https://inspirehep.net).
+Hi! I'm Szymon. I am a Computer Scientist currently working on [Xsuite](https://xsuite.readthedocs.io/en/latest/) at the European Organization for Nuclear Research (CERN). Previously, I wrote my Theoretical Computer Science PhD thesis [on the Billaud Conjecture](https://repository.lboro.ac.uk/articles/thesis/On_the_Billaud_Conjecture_and_related_problems/21390837) at Loughborough University, UK. During my undergraduate studies I completed a Technical Studentship at CERN working on [Inspire](https://inspirehep.net).
 
-My interests include theoretical computer science, software development and natural language processing. Have a look at my [portfolio](/portfolio.html) or [GitHub](https://github.com/szymonlopaciuk) to see some of my past projects, and if you would like to know more about me, [this is my LinkedIn profile](https://www.linkedin.com/in/szymonlopaciuk/).
+My interests include theoretical computer science and all things related to good software engineering. Have a look at my [portfolio](/portfolio.html) or [GitHub](https://github.com/szymonlopaciuk) to see some of my past projects, and if you would like to know more about me, [this is my LinkedIn profile](https://www.linkedin.com/in/szymonlopaciuk/).
 
 If you would like to get in touch, drop me an email at <span id="magic">szymon&#8203;@&#8203;<span style="display:none">qwerty</span>lopaciuk&#8203;.&#8203;eu</span> or a message on Matrix at [@sz_lop:matrix.org](https://matrix.to/#/@sz_lop:matrix.org).
 
